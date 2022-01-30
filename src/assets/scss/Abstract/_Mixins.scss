@@ -1,0 +1,98 @@
+
+@import"./Vaiables";
+
+@mixin Overlay {
+    content:"";
+        position:absolute;
+        height:100%;
+        width:100%;
+        top:0;
+        left:0;
+        background-color: rgba(0, 0, 0,.7);
+}
+
+
+@mixin TextDualColor {
+    
+    strong{
+        color:$Dual1;
+
+    }
+    span{
+        color:$Dual2;
+    }
+}
+
+@mixin CenterLine {
+    position:relative;
+
+    &::after{
+        content:"";
+        position:absolute;
+        bottom:-20px;
+        left:46%;
+        height:1.5px;
+        width:80px;
+        background-color: $Dual2;
+    }
+}
+
+@mixin leftLine {
+    position:relative;
+    color: $Head-pri;
+    margin-bottom: 30px;
+    &::after{
+        content:"";
+        position:absolute;
+        bottom:-20px;
+        left:0;
+        height:1.5px;
+        width:80px;
+        background-color:$Head-pri;
+    }
+}
+@mixin leftLineOrange {
+    position:relative;
+    // color: $Dual2;
+    margin-bottom: 30px;
+    &::after{
+        content:"";
+        position:absolute;
+        bottom:-20px;
+        left:0;
+        height:1.5px;
+        width:80px;
+        background-color:$Dual2;
+    }
+}
+
+/*TAb EFFECT Mixins*/
+@mixin TabEffect {
+    height:33%;
+        width: 70%;
+        margin-bottom: 1.5px;
+        display: flex;
+        justify-content: center;
+}
+
+@mixin circles {
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    outline: 2px solid $Dual2;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    
+i{
+      
+        display: flex;
+        justify-content: center;
+        color:$Dual2;
+}
+}

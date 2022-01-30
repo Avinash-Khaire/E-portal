@@ -1,0 +1,23 @@
+@import"../Abstract/Vaiables";
+@import"../Abstract/Mixins";
+
+
+.heading-line{
+    @include CenterLine;
+    margin-bottom: 50px;
+ 
+
+
+}
+.circleimg{
+    height:70px;
+    width:70px;
+    border:1px solid red;
+    background-image: url(../../images/person.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    // background-size:700%;
+    background-size:33rem;
+    object-fit: cover;
+
+}

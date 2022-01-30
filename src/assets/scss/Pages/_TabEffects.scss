@@ -1,0 +1,26 @@
+@import"../Abstract/Vaiables";
+@import"../Abstract/Mixins";
+section.tabEffect{
+    background-color:$sec-Back2;
+    display: flex;
+   
+}
+.TAB{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   &-1{
+        @include TabEffect;
+        background-color: $Dual2;
+
+    }
+    &-2,&-3{
+        @include TabEffect;
+        background-color: $button-pri;
+    }
+}
+
+.btn{
+    background-color: $button-sec;
+}

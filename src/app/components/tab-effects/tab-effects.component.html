@@ -1,0 +1,29 @@
+<section class="tabEffect" >
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-3 text-white text-center TAB mb-2">
+                        <div class="div TAB-1" (click)="changeSwitch()">
+                            <a class="align-self-center">TAB1</a>
+                        </div>
+                        <div class="div TAB-2" (click)="changeSwitch()">
+                            <h5 class="align-self-center">TAB2</h5>
+                        </div>
+                        <div class="div TAB-3" (click)="changeSwitch()">
+                            <h5 class="align-self-center" >TAB3</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-9 align-self-center mb-1"  >
+                 <ng-content *ngIf="flag"></ng-content>
+
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="col-md-4 mb-1 ">
+                <img class="img-fluid" src="../../../assets/images/feature1.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>

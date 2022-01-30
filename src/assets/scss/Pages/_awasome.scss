@@ -1,0 +1,28 @@
+@import"../Abstract/Mixins";
+@import"../Abstract/Vaiables";
+
+section.Awasome{
+    display: flex;
+    // justify-content: center;
+    align-items: center
+}
+.circle{
+    @include circles;
+    height: 70px;
+    width: 70px;
+
+}
+.forcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.AwasomeHeading{
+    @include CenterLine;
+   color: $Head-sec;
+}
+.head-sec{
+    color: $Head_ter;
+    font-size: 30px;
+}

@@ -1,0 +1,37 @@
+@import"../Abstract/Vaiables";
+@import"../../scss/Abstract/Mixins";
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    color: $Text-Pri;
+}
+.heriImg{
+    background-image: url("../../images/StandardRight.jpg");
+    // background-color: blanchedalmond;
+    min-height:92vh;
+    background-position: center center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &::before{
+        @include Overlay;
+    }
+}
+.logo{
+   @include TextDualColor;
+   font-size: 50px;
+}
+.Herohead{
+  @include leftLine;
+  font-family: 'Raleway', sans-serif;
+}
+.free{
+    color:$Dual2;
+}
+.Getstarted{
+    background-color:$Dual2;
+
+}

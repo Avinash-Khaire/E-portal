@@ -1,0 +1,20 @@
+
+@import"../Abstract/Vaiables";
+@import"../Abstract/Mixins";
+
+section.sublist{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    justify-content: space-between;
+    background-color: $sec-Back1;
+
+    .heading{
+    @include leftLineOrange;
+    }
+
+    
+}
+.circle{
+   @include circles;
+}

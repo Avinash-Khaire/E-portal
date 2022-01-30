@@ -1,0 +1,8 @@
+@import"../Abstract/Mixins";
+section.navBar{
+    background-color: black;
+    .logo1{
+       @include TextDualColor;
+    }
+    height: 8vh;
+}

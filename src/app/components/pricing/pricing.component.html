@@ -1,0 +1,36 @@
+<section class="prisingCards py-5 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 mb-3">
+            <div class="afterLine mb-5">
+            <h3 class="text-uppercase">Pricing Options</h3>
+
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, rem?</p>
+        </div>
+            <div class="col-md-4  Pricingcard mb-4" *ngFor="let package of packageStorage " >
+              <div class="mb-0 mainCard">
+                <div class="color"><h3 class="name">{{package.name}}</h3></div>
+                <div class="color py-2">
+                    <h2 class="mb-0 num">
+                        <span>{{package.price1}}</span>
+                        <strong>{{package.price2}}</strong>
+                    </h2>
+                    <p class="mb-0">{{package.quote}}</p>
+                </div>
+               <p class="optionalPara mb-0 text-white" *ngIf="!null">{{package.add}}</p>
+                <ul class="list-group list6">
+                    <li class="list-group-item">{{package.Specification.space}}</li>
+                    <li class="list-group-item">{{package.Specification.bandwdth}}</li>
+                    <li class="list-group-item">{{package.Specification.Website}}</li>
+                    <li class="list-group-item">{{package.Specification.Custom}}</li>
+                    <li class="list-group-item">{{package.Specification.Integration}}</li>
+                    <li class="list-group-item">{{package.Specification.Support}}</li>
+                </ul>
+                   
+              </div>
+
+            </div>
+        </div>
+    </div>
+</section>

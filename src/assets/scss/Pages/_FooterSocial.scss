@@ -1,0 +1,18 @@
+@import"../../scss/Abstract/Mixins";
+@import"../../scss/Abstract/Vaiables";
+
+.Footersocial{
+
+    background-color: $Head-sec;
+}
+.icons{
+   
+   i{
+    color: $Text-Pri;
+    font-size: 20px;
+
+   }
+}
+p{
+    font-size: 10px;
+}

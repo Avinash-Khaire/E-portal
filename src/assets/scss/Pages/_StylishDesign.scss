@@ -1,0 +1,33 @@
+@import"../Abstract/Mixins";
+@import"../Abstract/Vaiables";
+
+
+section.stylish{
+    background-image: url("../../images/StandardRight.jpg");
+    background-position: center center;
+    object-fit: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+        &::before{
+    @include Overlay;
+
+        }
+    
+}
+.HeadingLine{
+    position: relative;
+    color:$Head-pri;
+    &::after{
+        content:"";
+        position:absolute;
+        bottom:-20px;
+        left:46%;
+        height:1.5px;
+        width:80px;
+        background-color: $Head-pri;
+    }
+}
+.btns{
+    // background-color: $button-sec;
+}
